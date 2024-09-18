@@ -1,0 +1,172 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+   background-image: url(./img/pistachio-free-solidcolor-background.jpg);
+    
+}
+.circle{
+    position: absolute;
+    right:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color:rgb(170, 241, 170);
+    clip-path: circle(600px at right 800px);
+}
+nav{
+    width:90%;
+    margin:auto;
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display:flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin:0 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    padding:5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(109, 71, 52);
+    position: relative;
+    z-index: 1;
+}
+nav ul li a::after{
+    content:"";
+    width:0%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 20px;
+    z-index: -1;
+    background-color:rgb(170, 241, 170);
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;   
+}
+
+img{
+    width:80px;
+    height:80px;
+}
+.main-content{
+    width:60%;
+    height: 70%;
+    padding-top: 150px;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.image-pista,.main-text{
+    flex-basis:80% ;
+}
+.image-pista img{
+    width:100%;
+    height:90%;
+}
+.main-content h1{
+    font-size:60px;
+    letter-spacing: 1px;
+    color: rgb(109, 71, 52);
+}
+.main-content p{
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.main-content button{
+    margin-top: 2.5rem;
+    outline:none ;
+    border:none;
+    font-size:18px;
+    padding:0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color:#494234 ;
+    color:white;
+    cursor: pointer;
+
+}
+.swiper{
+    width:20rem;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.right{
+   position:absolute; 
+   right:8%;
+   bottom:17%;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.right .box  .image img{
+    width:70%;
+}
+.image{
+    margin-top: 1rem;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.image:hover{
+    background-color: rgb(109, 71, 52);
+}
+.box .inner-box{
+    margin: 1.5rem 0 0 1rem;
+}
+.box .inner-box p{
+    font-size:14px ;
+}
+.social-links{
+    position: absolute;
+    right:4%;
+    bottom:4%;
+}
+.social-links::before{
+    content:"";
+    width:80%;
+    height:3px;
+    position: absolute;
+    top: 42%;
+    left:-150px;
+    background-color: #494234;
+}
+.social-links i{
+   margin-left: 10px;
+   width:35px;
+   height:35px;
+   border-radius: 50%;
+   background-color:rgb(144, 189, 149) ;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s;
+   
+}
+.social-links i:hover{
+    transform: translateY(-5px);
+    
+}
